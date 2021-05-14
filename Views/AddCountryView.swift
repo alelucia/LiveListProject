@@ -13,6 +13,8 @@ struct AddCountryView: View {
         VStack{
             TextField("Add City Name", text: $cityName)
             Text(cityName)
+            //TextField("Add City Population", text: $cityPopulation)
+            //Text(cityPopulation)
         }
         .navigationBarTitle("Add a New Country")
     }
@@ -21,5 +23,6 @@ struct AddCountryView: View {
 struct AddCountryView_Previews: PreviewProvider {
     static var previews: some View {
         AddCountryView(cityName: "Country")
+        //AddCountryView(cityPopulation: "Population")
     }
 }
